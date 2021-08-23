@@ -14,3 +14,6 @@ const respDataMiddleware = require('./middleware/koa_response_data')
 app.use(respDataMiddleware)
 // 绑定端口号
 app.listen(8888)
+
+const webSocketService = require('./service/web_socket_service')
+webSocketService.listen()
